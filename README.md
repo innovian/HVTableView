@@ -5,6 +5,7 @@ by Hamidreza Vakilian
 
 ------
 
+![Screenshot](http://www.infracyber.com/private/github/HVTableView/screenshot.jpg)
 
 ###Summary
 This is a subclass of **UITableView** with expand/collapse feature that may come so handy in many apps.	The developer can save a lot of time using an expand/collapse tableView instead of creating a detail viewController for every cell. This means that the details of each cell can be displayed immediately on the same table without switching to another view. On the other hand, in my opinion it's far more impressive and eye-catching in compare to the a master details tableview.
@@ -61,7 +62,7 @@ Please don't hesitate to mail me your feedbacks and suggestions or a bug report.
 
 <u>ON THE BOTTOM LINE: </u> I allow you to use my code in your applications with freedom in making any modifications, but if you are going to do so, or you just like it and want further updates and bug fixes please consider donating me via this url:
 
-[https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xerxes235%40yahoo%2ecom&lc=AE&item_name=Hamidreza%20Vakilian&item_number=HVTableView%20donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted]()
+[Donate me!](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xerxes235%40yahoo%2ecom&lc=AE&item_name=Hamidreza%20Vakilian&item_number=HVTableView%20donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 
 
