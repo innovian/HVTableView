@@ -31,9 +31,9 @@ Like before you implement these familiar delegate functions:
 		-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 
 I added a boolean parameter the heightForRowAtIndexPath function so you will return different values for an expanded or a collapsed cell.
-		-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isexpanded
-		(isExpanded==TRUE: return the size of the cell in expanded state)
-		(isExpanded==FALSE: return the size of the cell in collapsed (initial) state)
+	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isexpanded
+	(isExpanded==TRUE: return the size of the cell in expanded state)
+	(isExpanded==FALSE: return the size of the cell in collapsed (initial) state)
 
 I also added a boolean parameter to the cellForRowAtIndexPath function too. update the cell's content respecting it's state (isExpanded)
 		-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
