@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 //***************	HVTableView - UITableView with expand/collapse feature   *****************************
 //					by hamidreza vakilian
@@ -64,3 +65,9 @@
 //
 //	Thanks,....
 // ***************************************************************************************************************
+=======
+HVTableView
+===========
+
+UITableView with expand/collapse feature
+>>>>>>> 42ac049e49a1c5ddf408709ad45be816e32b776e
