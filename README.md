@@ -27,23 +27,23 @@ Two important parameters when initializing the HVTableView
 
 Your viewController must conform to HVTableViewDelegate, HVTableViewDataSource protocols. Just like the regular UITableView.
 Like before you implement these familiar delegate functions:
-	-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-	-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+		-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+		-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 
 I added a boolean parameter the heightForRowAtIndexPath function so you will return different values for an expanded or a collapsed cell.
-	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isexpanded
-	(isExpanded==TRUE: return the size of the cell in expanded state)
-	(isExpanded==FALSE: return the size of the cell in collapsed (initial) state)
+		-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isexpanded
+		(isExpanded==TRUE: return the size of the cell in expanded state)
+		(isExpanded==FALSE: return the size of the cell in collapsed (initial) state)
 
 I also added a boolean parameter to the cellForRowAtIndexPath function too. update the cell's content respecting it's state (isExpanded)
-	-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
+		-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
 
 
 Now the interesting functions are here. Implement this function and it will be fired when a cell is going to expand. You can perform your drawings, animations, etc. in this function:
-	-(void)tableView:(UITableView *)tableView collapseCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
+		-(void)tableView:(UITableView *)tableView collapseCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
 
 Implement this function. it will be fired when a cell is going to collapse. You can perform your drawings, animations, etc. or clearing up the cell in this function:
-	-(void)tableView:(UITableView *)tableView expandCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
+		-(void)tableView:(UITableView *)tableView expandCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
 
  IMPORTANT NOTE: there are some delegate functions from UITableViewDelegate that I have commented their forwarding. If you need to implement those on your viewController or smth, go to HVTableView.m and uncomment those delegate functions. If you don't uncomment them; your delegate functions won't fire up.
 This code may contain bugs. I don't garauntee its functionality, but use it on your own risk. I also tried to craft it with best performance, yet it can be optimized more.
