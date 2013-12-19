@@ -119,7 +119,9 @@
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		
 		UIImageView* expandGlyph = [[UIImageView alloc] initWithFrame:CGRectMake(560, 45, 15, 10)];
-		expandGlyph.image = [UIImage imageNamed:@"expandGlyph.png"];
+		NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
+		expandGlyph.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, @"expandGlyph.png" ]];
+		
 		expandGlyph.tag = 7;
 		[cell.contentView addSubview:expandGlyph];
 		cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -133,9 +135,10 @@
 		cell.backgroundColor = [UIColor colorWithRed:.8 green:.8 blue:.8 alpha:1];
 	
 	
-	cell.textLabel.text = [cellTitles objectAtIndex:indexPath.row % 10 ];
-	cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", indexPath.row % 10 + 1]];
-
+	cell.textLabel.text = [cellTitles objectAtIndex:indexPath.row % 10];
+	NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
+	NSString* imageFileName = [NSString stringWithFormat:@"%d.jpg", indexPath.row % 10 + 1];
+	cell.imageView.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageFileName]];
 	
 	if (!isExpanded) //prepare the cell as if it was collapsed! (without any animation!)
 	{

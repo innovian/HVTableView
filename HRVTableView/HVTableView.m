@@ -98,8 +98,8 @@
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{	
-	UITableViewCell* cell = [HVTableViewDataSource tableView:tableView cellForRowAtIndexPath:indexPath isExpanded:NO];
+{
+	UITableViewCell* cell;
 	
 	if (expandOnlyOneCell)
 	{
@@ -112,8 +112,12 @@
 					return cell;
 				}
 			
+			cell = [HVTableViewDataSource tableView:tableView cellForRowAtIndexPath:indexPath isExpanded:NO];
+			
 			return cell; //it's already collapsed!
 		}
+		
+		cell = [HVTableViewDataSource tableView:tableView cellForRowAtIndexPath:indexPath isExpanded:NO];
 		
 		if(actionToTake == -1)
 		{
@@ -145,6 +149,8 @@
 			return cell; //it's already collapsed!
 
 		}
+		
+		cell = [HVTableViewDataSource tableView:tableView cellForRowAtIndexPath:indexPath isExpanded:NO];
 		
 		if(actionToTake == -1)
 		{
@@ -431,7 +437,7 @@
 		else ///expand it!
 		{
 			actionToTake = 1;
-			[expandedIndexPaths addObject:indexPath];
+			[expandedIndexPaths addObject:indexPath];			
 			[tableView beginUpdates];
 			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 			[tableView endUpdates];
