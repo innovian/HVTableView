@@ -13,20 +13,28 @@
 @implementation HVTableView
 @synthesize HVTableViewDelegate, HVTableViewDataSource;
 
-- (id)initWithFrame:(CGRect)frame expandOnlyOneCell:(BOOL)_expandOnlyOneCell enableAutoScroll: (BOOL)_enableAutoScroll
+- (id)initWithFrame:(CGRect)frame expandOnlyOneCell:(BOOL)expandOnlyOneCell enableAutoScroll: (BOOL)enableAutoScroll
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-		expandOnlyOneCell = _expandOnlyOneCell;
+		self.expandOnlyOneCell = expandOnlyOneCell;
 		if (!expandOnlyOneCell)
 			expandedIndexPaths = [[NSMutableArray alloc] init];
 		
-		enableAutoScroll = _enableAutoScroll;
+		self.enableAutoScroll = enableAutoScroll;
 		
 		self.delegate = self;
 		self.dataSource = self;
-		
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if(self) {		
+		self.delegate = self;
+		self.dataSource = self;
     }
     return self;
 }
@@ -101,7 +109,7 @@
 {
 	UITableViewCell* cell;
 	
-	if (expandOnlyOneCell)
+	if (self.expandOnlyOneCell)
 	{
 		if (actionToTake == 0) // e.g. the first time or an expanded cell from before gets in to view
 		{
@@ -353,7 +361,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (expandOnlyOneCell)
+	if (self.expandOnlyOneCell)
 	{
 		if (selectedIndexPath)
 		if(selectedIndexPath.row == indexPath.row && selectedIndexPath.section == indexPath.section)
@@ -385,7 +393,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	
-	if (expandOnlyOneCell)
+	if (self.expandOnlyOneCell)
 	{
 		if (selectedIndexPath)
 		if (selectedIndexPath.row != -1 && selectedIndexPath.row != -2) //collapse the last expanded item (if any)
@@ -413,7 +421,7 @@
 		[tableView beginUpdates];
 		[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 		[tableView endUpdates];
-		if (enableAutoScroll)
+		if (self.enableAutoScroll)
 			[tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 		
 	}
@@ -441,7 +449,7 @@
 			[tableView beginUpdates];
 			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 			[tableView endUpdates];
-			if (enableAutoScroll)
+			if (self.enableAutoScroll)
 				[tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 		}
 	}
