@@ -41,20 +41,13 @@
 //perform your expand stuff (may include animation) for cell here. It will be called when the user touches a cell
 -(void)tableView:(UITableView *)tableView expandCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
-	[[cell.contentView viewWithTag:10] removeFromSuperview];
-	UIButton* purchaseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	purchaseButton.frame = CGRectMake(600, 150, 120, 40);
+	UILabel *detailLabel = (UILabel *)[cell viewWithTag:3];
+    UIButton *purchaseButton = (UIButton *)[cell viewWithTag:10];
 	purchaseButton.alpha = 0;
-	[purchaseButton setTitle:@"Purchase Now!" forState:UIControlStateNormal];
-	purchaseButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:13];
-	purchaseButton.backgroundColor = [UIColor grayColor];
-	[purchaseButton setTintColor:[UIColor whiteColor]];
-	[cell.contentView addSubview:purchaseButton];
-	purchaseButton.tag = 10;
+    purchaseButton.hidden = NO;
 	
 	[UIView animateWithDuration:.5 animations:^{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-		purchaseButton.frame = CGRectMake(450, 150, 120, 40);
+		detailLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		purchaseButton.alpha = 1;
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
 	}];
@@ -63,7 +56,16 @@
 //perform your collapse stuff (may include animation) for cell here. It will be called when the user touches an expanded cell so it gets collapsed or the table is in the expandOnlyOneCell satate and the user touches another item, So the last expanded item has to collapse
 -(void)tableView:(UITableView *)tableView collapseCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
-	[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(0);
+	UILabel *detailLabel = (UILabel *)[cell viewWithTag:3];
+    UIButton *purchaseButton = (UIButton *)[cell viewWithTag:10];
+	
+	[UIView animateWithDuration:.5 animations:^{
+		detailLabel.text = @"Lorem ipsum dolor sit amet";
+		purchaseButton.alpha = 0;
+		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(-3.14);
+	} completion:^(BOOL finished) {
+        purchaseButton.hidden = YES;
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,22 +95,13 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
 {
-	static NSString *CellIdentifier = @"aCell";
+	static NSString *CellIdentifier = @"Content1";
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (!cell)
-	{
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-		cell.selectionStyle = UITableViewCellSelectionStyleNone;
-		
-		UIImageView* expandGlyph = [[UIImageView alloc] initWithFrame:CGRectMake(560, 45, 15, 10)];
-		NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
-		expandGlyph.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, @"expandGlyph.png" ]];
-		
-		expandGlyph.tag = 7;
-		[cell.contentView addSubview:expandGlyph];
-		cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
-		cell.detailTextLabel.numberOfLines = 0;
-	}
+    
+	UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
+	UILabel *textLabel = (UILabel *)[cell viewWithTag:2];
+	UILabel *detailLabel = (UILabel *)[cell viewWithTag:3];
+    UIButton *purchaseButton = (UIButton *)[cell viewWithTag:10];
 	
 	//alternative background colors for better division ;)
 	if (indexPath.row %2 ==1)
@@ -116,31 +109,21 @@
 	else
 		cell.backgroundColor = [UIColor colorWithRed:.8 green:.8 blue:.8 alpha:1];
 	
-	
-	cell.textLabel.text = [cellTitles objectAtIndex:indexPath.row % 10];
+	textLabel.text = [cellTitles objectAtIndex:indexPath.row % 10];
 	NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
 	NSString* imageFileName = [NSString stringWithFormat:@"%d.jpg", indexPath.row % 10 + 1];
-	cell.imageView.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageFileName]];
+	imageView.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageFileName]];
 	
 	if (!isExpanded) //prepare the cell as if it was collapsed! (without any animation!)
 	{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet";
+		detailLabel.text = @"Lorem ipsum dolor sit amet";
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(0);
+        purchaseButton.hidden = YES;
 	}
 	else ///prepare the cell as if it was expanded! (without any animation!)
 	{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+		detailLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
-		
-		[[cell.contentView viewWithTag:10] removeFromSuperview];
-		UIButton* purchaseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		purchaseButton.frame = CGRectMake(500, 150, 80, 40);
-		[purchaseButton setTitle:@"Purchase Now!" forState:UIControlStateNormal];
-		purchaseButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:10];
-		purchaseButton.backgroundColor = [UIColor grayColor];
-		[purchaseButton setTintColor:[UIColor whiteColor]];
-		[cell.contentView addSubview:purchaseButton];
-		purchaseButton.tag = 10;
 	}
 	return cell;
 }

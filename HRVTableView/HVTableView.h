@@ -148,7 +148,5 @@
 @property (nonatomic) BOOL expandOnlyOneCell;
 @property (nonatomic) BOOL enableAutoScroll;
 
-- (id)initWithFrame:(CGRect)frame expandOnlyOneCell:(BOOL)_expandOnlyOneCell enableAutoScroll: (BOOL)_enableAutoScroll;
-
 @end
 

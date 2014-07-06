@@ -18,15 +18,7 @@
 {
 	[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-	
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-	
-	self.viewController = [[rootViewController alloc] initWithNibName:@"rootViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
-	
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

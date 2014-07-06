@@ -13,23 +13,6 @@
 @implementation HVTableView
 @synthesize HVTableViewDelegate, HVTableViewDataSource;
 
-- (id)initWithFrame:(CGRect)frame expandOnlyOneCell:(BOOL)expandOnlyOneCell enableAutoScroll: (BOOL)enableAutoScroll
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-		self.expandOnlyOneCell = expandOnlyOneCell;
-		if (!expandOnlyOneCell)
-			expandedIndexPaths = [[NSMutableArray alloc] init];
-		
-		self.enableAutoScroll = enableAutoScroll;
-		
-		self.delegate = self;
-		self.dataSource = self;
-    }
-    return self;
-}
-
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if(self) {		

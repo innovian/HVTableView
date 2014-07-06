@@ -20,7 +20,6 @@
 		037FD1EF1843383C00D142A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 037FD1ED1843383C00D142A2 /* InfoPlist.strings */; };
 		037FD1F11843383C00D142A2 /* HRVTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037FD1F01843383C00D142A2 /* HRVTableViewTests.m */; };
 		037FD1FD1843397A00D142A2 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037FD1FB1843397A00D142A2 /* rootViewController.m */; };
-		037FD1FE1843397A00D142A2 /* rootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037FD1FC1843397A00D142A2 /* rootViewController.xib */; };
 		037FD20118433BBF00D142A2 /* HVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037FD20018433BBF00D142A2 /* HVTableView.m */; };
 		037FD2071843B43C00D142A2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037FD2021843B43C00D142A2 /* 1.jpg */; };
 		037FD2081843B43C00D142A2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037FD2031843B43C00D142A2 /* 2.jpg */; };
@@ -33,6 +32,7 @@
 		037FD2141843B4A400D142A2 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037FD20F1843B4A400D142A2 /* 9.jpg */; };
 		037FD2151843B4A400D142A2 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037FD2101843B4A400D142A2 /* 10.jpg */; };
 		037FD2171843BB4E00D142A2 /* expandGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 037FD2161843BB4E00D142A2 /* expandGlyph.png */; };
+		85FD010619694C4B0014B487 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FD010519694C4B0014B487 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		037FD1F01843383C00D142A2 /* HRVTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRVTableViewTests.m; sourceTree = "<group>"; };
 		037FD1FA1843397A00D142A2 /* rootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
 		037FD1FB1843397A00D142A2 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
-		037FD1FC1843397A00D142A2 /* rootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rootViewController.xib; sourceTree = "<group>"; };
 		037FD1FF18433BBF00D142A2 /* HVTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVTableView.h; sourceTree = "<group>"; };
 		037FD20018433BBF00D142A2 /* HVTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVTableView.m; sourceTree = "<group>"; };
 		037FD2021843B43C00D142A2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		037FD20F1843B4A400D142A2 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		037FD2101843B4A400D142A2 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		037FD2161843BB4E00D142A2 /* expandGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandGlyph.png; sourceTree = "<group>"; };
+		85FD010519694C4B0014B487 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +141,9 @@
 				037FD20018433BBF00D142A2 /* HVTableView.m */,
 				037FD1FA1843397A00D142A2 /* rootViewController.h */,
 				037FD1FB1843397A00D142A2 /* rootViewController.m */,
-				037FD1FC1843397A00D142A2 /* rootViewController.xib */,
 				037FD1DA1843383B00D142A2 /* AppDelegate.h */,
 				037FD1DB1843383B00D142A2 /* AppDelegate.m */,
+				85FD010519694C4B0014B487 /* Storyboard.storyboard */,
 				037FD1DD1843383B00D142A2 /* Images.xcassets */,
 				037FD1D21843383B00D142A2 /* Supporting Files */,
 			);
@@ -278,7 +278,7 @@
 				037FD2121843B4A400D142A2 /* 7.jpg in Resources */,
 				037FD2141843B4A400D142A2 /* 9.jpg in Resources */,
 				037FD1DE1843383B00D142A2 /* Images.xcassets in Resources */,
-				037FD1FE1843397A00D142A2 /* rootViewController.xib in Resources */,
+				85FD010619694C4B0014B487 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +503,7 @@
 				037FD1F61843383C00D142A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		037FD1F71843383C00D142A2 /* Build configuration list for PBXNativeTarget "HRVTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				037FD1F91843383C00D142A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
