@@ -9,12 +9,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class rootViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) rootViewController *viewController;
 
 @end

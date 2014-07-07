@@ -141,14 +141,12 @@
 	NSIndexPath *selectedIndexPath;
 	int actionToTake;
 	NSMutableArray* expandedIndexPaths;
-	BOOL expandOnlyOneCell;
-	BOOL enableAutoScroll;
 }
 
 @property (weak,nonatomic) id <HVTableViewDelegate> HVTableViewDelegate;
 @property (weak,nonatomic) id <HVTableViewDataSource> HVTableViewDataSource;
-
-- (id)initWithFrame:(CGRect)frame expandOnlyOneCell:(BOOL)_expandOnlyOneCell enableAutoScroll: (BOOL)_enableAutoScroll;
+@property (nonatomic) BOOL expandOnlyOneCell;
+@property (nonatomic) BOOL enableAutoScroll;
 
 @end
 

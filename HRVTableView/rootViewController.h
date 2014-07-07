@@ -12,10 +12,10 @@
 #import "HVTableView.h"
 
 
-@interface rootViewController : UIViewController <HVTableViewDelegate, HVTableViewDataSource>
-{
-	HVTableView* myTable;
-	NSArray* cellTitles;
+@interface rootViewController : UIViewController <HVTableViewDelegate, HVTableViewDataSource> {
+	NSArray *cellTitles;
 }
+
+@property (weak, nonatomic) IBOutlet HVTableView *table;
 
 @end
