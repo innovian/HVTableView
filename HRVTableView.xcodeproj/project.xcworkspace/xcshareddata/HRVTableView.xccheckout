@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>831D4676-9462-4A97-9618-4A6E0582E0B3</string>
+	<string>6D9EB527-5842-4952-BA5C-5EB1D13D1DC7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HRVTableView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>09764649-86C8-4CFB-BF0F-E9D0232C85ED</key>
-		<string>https://github.com/gavyaggarwal/HVTableView.git</string>
+		<key>E96E0BB2-DA1A-4470-AE12-507C04776DF1</key>
+		<string>https://github.com/bolek1976/HVTableView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HRVTableView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>09764649-86C8-4CFB-BF0F-E9D0232C85ED</key>
+		<key>E96E0BB2-DA1A-4470-AE12-507C04776DF1</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gavyaggarwal/HVTableView.git</string>
+	<string>https://github.com/bolek1976/HVTableView.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>09764649-86C8-4CFB-BF0F-E9D0232C85ED</string>
+	<string>E96E0BB2-DA1A-4470-AE12-507C04776DF1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>09764649-86C8-4CFB-BF0F-E9D0232C85ED</string>
+			<string>E96E0BB2-DA1A-4470-AE12-507C04776DF1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HVTableView</string>
 		</dict>
