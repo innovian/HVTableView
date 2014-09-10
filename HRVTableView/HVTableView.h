@@ -148,5 +148,12 @@
 @property (nonatomic) BOOL expandOnlyOneCell;
 @property (nonatomic) BOOL enableAutoScroll;
 
+/**
+ Collapse all expanded cells (if any)
+ 
+ NOTE- This needs to be called before changing data source (see here https://github.com/xerxes235/HVTableView/issues/4#issuecomment-54508764)
+ */
+- (void)collapseExpandedCells;
+
 @end
 

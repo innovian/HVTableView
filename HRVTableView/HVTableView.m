@@ -438,6 +438,13 @@
 	}
 }
 
+- (void)collapseExpandedCells {
+    [expandedIndexPaths removeAllObjects];
+    selectedIndexPath = nil;
+    [self performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
