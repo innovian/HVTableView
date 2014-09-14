@@ -117,7 +117,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="expandOnlyOneCell" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="expandOnlyOneCell" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enableAutoScroll" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
