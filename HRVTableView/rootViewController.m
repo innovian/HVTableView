@@ -111,7 +111,7 @@
 	
 	textLabel.text = [cellTitles objectAtIndex:indexPath.row % 10];
 	NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
-	NSString* imageFileName = [NSString stringWithFormat:@"%d.jpg", indexPath.row % 10 + 1];
+	NSString* imageFileName = [NSString stringWithFormat:@"%ld.jpg", indexPath.row % 10 + 1];
 	imageView.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageFileName]];
 	
 	if (!isExpanded) //prepare the cell as if it was collapsed! (without any animation!)

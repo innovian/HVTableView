@@ -431,7 +431,7 @@
 			actionToTake = 1;
 			[expandedIndexPaths addObject:indexPath];			
 			[tableView beginUpdates];
-//			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 			[tableView endUpdates];
 			if (self.enableAutoScroll)
 				[tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
