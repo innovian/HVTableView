@@ -124,6 +124,7 @@
 	{
 		detailLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
+		purchaseButton.hidden = NO;
 	}
 	return cell;
 }
