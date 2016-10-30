@@ -1,0 +1,16 @@
+PODS:
+  - HVTableView (0.1.0)
+
+DEPENDENCIES:
+  - HVTableView (from `../`)
+
+EXTERNAL SOURCES:
+  HVTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HVTableView: b239e0437041d096869a8258da8f33f81bcd53da
+
+PODFILE CHECKSUM: f70d102faee7f5d41541db23e084d3b60b71766b
+
+COCOAPODS: 1.1.1
