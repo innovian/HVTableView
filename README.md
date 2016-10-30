@@ -36,8 +36,8 @@ Create a **UITableView** in Storyboard or your nib file and change its class to 
 Your viewController must conform to **HVTableViewDelegate** and **HVTableViewDataSource** protocols.
 Like UITableView you implement these familiar delegate functions:
 
-		-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-		-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+	-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+	-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 
 We added a boolean parameter the **heightForRowAtIndexPath** function so you will have to calculate different values for expand and collapse states.
 
@@ -47,21 +47,21 @@ We added a boolean parameter the **heightForRowAtIndexPath** function so you wil
 
 We also added a boolean parameter to the **cellForRowAtIndexPath** function too. update the cell's content respecting it's state (isExpanded):
 
-		-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
+	-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
 
 
 Now the interesting functions are as follows. Implement *tableView:collapseCell:withIndexPath* and it will be fired when a cell is going to expand. You can perform your drawings, animations, etc. in this delegate method:
 
-		-(void)tableView:(UITableView *)tableView collapseCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
+	-(void)tableView:(UITableView *)tableView collapseCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
 
 The counterpart comes here. It will be fired when a cell is going to collapse. You can perform your drawings, animations, etc. or clearing up the cell in this function:
 
-		-(void)tableView:(UITableView *)tableView expandCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
+	-(void)tableView:(UITableView *)tableView expandCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
 
 *IMPORTANT NOTE: there are some delegate functions from UITableViewDelegate that we have commented their proxy in **HVTableView.m**. If you need to implement those on your viewController, go to **HVTableView.m** and uncomment those delegate methods. If you don't uncomment them; your delegate methods won't fire up.*
 
 ###Pros
-if you’re looking for a straight forward easy-to-setup library for expandable views, HVTableView is your choice. It provides an acceptable performance which is sufficient for using in regular projects.
+If you’re looking for a straight forward easy-to-setup library for expandable views, HVTableView is your choice. It provides an acceptable performance which is sufficient for using in regular projects.
 
 ###Cons
 Expanding a UITableViewCell requires a call to **reloadRowsAtIndexPaths:withRowAnimation:** which in turn forces the TableView to reload the cell, thereafter we will change the height for the corresponding cell. That’s why a slight flashing occurs when the cell is animating which is unpreventable due to UITableView limitations. If you’re looking for a more-professional expandable view, we suggest [HyperTreeView](http://github.com/innovian/HyperTreeView), a subclass of UIScrollView which provides super-smooth expansion/collapse for nodes while it supports hierarchical structures.
