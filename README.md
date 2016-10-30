@@ -58,7 +58,7 @@ The counterpart comes here. It will be fired when a cell is going to collapse. Y
 
 	-(void)tableView:(UITableView *)tableView expandCell: (UITableViewCell*)cell withIndexPath:(NSIndexPath*) indexPath;
 
-*IMPORTANT NOTE: there are some delegate functions from UITableViewDelegate that we have commented their proxy in **HVTableView.m**. If you need to implement those on your viewController, go to **HVTableView.m** and uncomment those delegate methods. If you don't uncomment them; your delegate methods won't fire up.*
+* ##IMPORTANT: there are some delegate functions from UITableViewDelegate that we have commented their proxy in HVTableView.m. If you need to implement those on your viewController, go to HVTableView.m and uncomment those delegate methods. If you don't uncomment them; your delegate methods won't fire up.
 
 ###Pros
 If you’re looking for a straight forward easy-to-setup library for expandable views, HVTableView is your choice. It provides an acceptable performance which is sufficient for using in regular projects.
