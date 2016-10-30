@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HVTableView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HVTableView.'
+  s.summary          = 'UITableView with expand/collapse feature'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is a subclass of UITableView with expand/collapse feature that comes useful in many scenarios. The developer can save a lot of time using an expand/collapse tableView instead of creating a detail viewController for each cell. Consequently the details of each cell can be displayed right on the same table without switching to another view.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/HVTableView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/innovian/HVTableView'
+  # s.screenshots     = 'https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/screenshot.jpg'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ParastooTb' => 'parastoo.tb@aol.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/HVTableView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Innovian' => 'innovian.com' }
+  s.source           = { :git => 'https://github.com/innovian/HVTableView.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/innovian'
 
   s.ios.deployment_target = '8.0'
 
