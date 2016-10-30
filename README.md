@@ -7,7 +7,7 @@
 
 iOS             |  tvOS
 :-------------------------:|:-------------------------:
-[![](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)  | [![](https://raw.github.com/Augustyniak/RATreeView/master/Screens/tvos_animation.gif)](https://raw.github.com/Augustyniak/RATreeView/master/Screens/tvos_animation.gif)
+[![](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)  | [![](https://raw.github.com/innvoian/HVTableView/master/Screens/animation.gif)](https://raw.github.com/innvoian/HVTableView/master/Screens/animation.gif)
 
 ## Example
 
