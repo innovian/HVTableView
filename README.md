@@ -5,9 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 [![Platform](https://img.shields.io/cocoapods/p/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 
-iOS             |  tvOS
-:-------------------------:|:-------------------------:
-[![](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)  | [![](https://raw.github.com/innvoian/HVTableView/master/Screens/animation.gif)](https://raw.github.com/innvoian/HVTableView/master/Screens/animation.gif)
+[![](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)
 
 ## Example
 
