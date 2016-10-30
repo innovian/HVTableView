@@ -8,12 +8,12 @@
 [![HVTableView: Screencast example](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)
 
 ###### UITableView with expand/collapse feature
-By [Innovian](http://innovian.com)
+
 ####Developers
 - Hamidreza Vakilian
 - Parastoo Tabatabaei
 
-####Contibutors
+####Contributors
 - Gavy Aggarwal (Storyboard Support)
 
 ------
@@ -41,7 +41,7 @@ Like UITableView you implement these familiar delegate functions:
 
 We added a boolean parameter the **heightForRowAtIndexPath** function so you will have to calculate different values for expand and collapse states.
 
-	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isexpanded
+	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath isExpanded:(BOOL)isExpanded
 	(isExpanded==TRUE: return the size of the cell in expanded state)
 	(isExpanded==FALSE: return the size of the cell in collapsed (initial) state)
 
@@ -60,11 +60,11 @@ The counterpart comes here. It will be fired when a cell is going to collapse. Y
 
 *IMPORTANT NOTE: there are some delegate functions from UITableViewDelegate that we have commented their proxy in **HVTableView.m**. If you need to implement those on your viewController, go to **HVTableView.m** and uncomment those delegate methods. If you don't uncomment them; your delegate methods won't fire up.*
 
-###Final Words
+###Pros
+if you’re looking for a straight forward easy-to-setup library for expandable views, HVTableView is your choice. It provides an acceptable performance which is sufficient for using in regular projects.
 
-
-
-
+###Cons
+Expanding a UITableViewCell requires a call to **reloadRowsAtIndexPaths:withRowAnimation:** which in turn forces the TableView to reload the cell, thereafter we will change the height for the corresponding cell. That’s why a slight flashing occurs when the cell is animating which is unpreventable due to UITableView limitations. If you’re looking for a more-professional expandable view, we suggest [HyperTreeView](http://github.com/innovian/HyperTreeView), a subclass of UIScrollView which provides super-smooth expansion/collapse for nodes while it supports hierarchical structures.
 
 ## Example
 
@@ -80,8 +80,7 @@ pod "HVTableView"
 ```
 
 ## Author
-
-Innovian, gitsupport@innovian.com
+[Innovian](http://innovian.com)
 
 ## License
 
