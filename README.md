@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 [![Platform](https://img.shields.io/cocoapods/p/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 
+iOS             |  tvOS
+:-------------------------:|:-------------------------:
+[![](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)](https://raw.github.com/innvoian/HVTableView/master/Screens/example.mp4)  | [![](https://raw.github.com/Augustyniak/RATreeView/master/Screens/tvos_animation.gif)](https://raw.github.com/Augustyniak/RATreeView/master/Screens/tvos_animation.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
