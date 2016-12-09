@@ -25,6 +25,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.table.HVTableViewDelegate = self;
     self.table.HVTableViewDataSource = self;
+    self.table.expandOnlyOneCell = YES;
         cellTitles = @[@"Twitowie", @"Bill Greyskull", @"Moonglampers", @"Psit", @"Duncan WJ Palmer", @"Sajuma", @"Victor_lee", @"Jugger-naut", @"Javiersanagustin", @"Velouria!"];
 }
 
