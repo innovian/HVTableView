@@ -1,0 +1,6 @@
+framework module HVTableView {
+  umbrella header "HVTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

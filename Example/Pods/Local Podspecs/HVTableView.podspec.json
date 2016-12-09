@@ -1,0 +1,22 @@
+{
+  "name": "HVTableView",
+  "version": "0.1.0",
+  "summary": "A short description of HVTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HVTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ParastooTb": "parastoo.tb@aol.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HVTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HVTableView/Classes/**/*"
+}
