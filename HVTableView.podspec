@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HVTableView'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'UITableView with expand/collapse feature'
 
 # This description is used to generate tags and improve search results.

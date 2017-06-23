@@ -4,7 +4,7 @@
 //
 //  Created by Hamidreza Vakilian on 25/11/2013
 //  Copyright (c) 2013 Hamidreza Vakilian. All rights reserved.
-//  Website: http://www.infracyber.com/
+//  Website: http://www.innovian.com/
 //  Email:   gitsupport@innovian.com
 //
 
@@ -376,27 +376,31 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	
+	[self toggleCellForTableView:tableView atIndexPath:indexPath];
+}
+
+-(void)toggleCellForTableView:(UITableView*)tableView atIndexPath:(NSIndexPath*)indexPath
+{
 	if (self.expandOnlyOneCell)
 	{
 		if (selectedIndexPath)
-		if (selectedIndexPath.row != -1 && selectedIndexPath.row != -2) //collapse the last expanded item (if any)
-		{
-			BOOL dontExpandNewCell = NO;
-			if (selectedIndexPath.row == indexPath.row && selectedIndexPath.section == indexPath.section)
-				dontExpandNewCell = YES;
-			
-			NSIndexPath* tmp = [NSIndexPath indexPathForRow:selectedIndexPath.row inSection:selectedIndexPath.section];//tmp now holds the last expanded item
-			selectedIndexPath = [NSIndexPath indexPathForRow:-1 inSection:0];
-			
-			actionToTake = -1;
-			
-			[tableView beginUpdates];
-			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:tmp] withRowAnimation:UITableViewRowAnimationAutomatic];
-			[tableView endUpdates];
-			
-			if (dontExpandNewCell) return; //the same expanded cell was touched and now I collapsed it. No new cell is touched
-		}
+			if (selectedIndexPath.row != -1 && selectedIndexPath.row != -2) //collapse the last expanded item (if any)
+			{
+				BOOL dontExpandNewCell = NO;
+				if (selectedIndexPath.row == indexPath.row && selectedIndexPath.section == indexPath.section)
+					dontExpandNewCell = YES;
+				
+				NSIndexPath* tmp = [NSIndexPath indexPathForRow:selectedIndexPath.row inSection:selectedIndexPath.section];//tmp now holds the last expanded item
+				selectedIndexPath = [NSIndexPath indexPathForRow:-1 inSection:0];
+				
+				actionToTake = -1;
+				
+				[tableView beginUpdates];
+				[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:tmp] withRowAnimation:UITableViewRowAnimationAutomatic];
+				[tableView endUpdates];
+				
+				if (dontExpandNewCell) return; //the same expanded cell was touched and now I collapsed it. No new cell is touched
+			}
 		
 		actionToTake = 1;
 		///expand the new touched item
@@ -429,7 +433,7 @@
 		else ///expand it!
 		{
 			actionToTake = 1;
-			[expandedIndexPaths addObject:indexPath];			
+			[expandedIndexPaths addObject:indexPath];
 			[tableView beginUpdates];
 			[tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 			[tableView endUpdates];
@@ -439,13 +443,39 @@
 	}
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+-(void)expandCellAtIndexPath:(NSIndexPath*)indexPath
 {
-    // Drawing code
+	BOOL alreadyExpanded = NO;
+	NSIndexPath* correspondingIndexPath;
+	for (NSIndexPath* anIndexPath in expandedIndexPaths) {
+		if (anIndexPath.row == indexPath.row && anIndexPath.section == indexPath.section)
+		{alreadyExpanded = YES; correspondingIndexPath = anIndexPath;}
+	}
+	
+	if (alreadyExpanded)
+		return;
+	else
+		[self toggleCellAtIndexPath:indexPath];
 }
-*/
+
+-(void)collapseCellAtIndexPath:(NSIndexPath*)indexPath
+{
+	BOOL alreadyExpanded = NO;
+	NSIndexPath* correspondingIndexPath;
+	for (NSIndexPath* anIndexPath in expandedIndexPaths) {
+		if (anIndexPath.row == indexPath.row && anIndexPath.section == indexPath.section)
+		{alreadyExpanded = YES; correspondingIndexPath = anIndexPath;}
+	}
+	
+	if (!alreadyExpanded)
+		return;
+	else
+		[self toggleCellAtIndexPath:indexPath];
+}
+
+-(void)toggleCellAtIndexPath:(NSIndexPath*)indexPath
+{
+	[self toggleCellForTableView:self atIndexPath:indexPath];
+}
 
 @end

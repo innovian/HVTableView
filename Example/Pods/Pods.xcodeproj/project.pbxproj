@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07506A12549503095C33C2E878671A71 /* HVTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDA1471F65A5F6E04DC5F16A1B3A53 /* HVTableView-dummy.m */; };
+		0A86FEDDD7FD7855B388E1D8A577700E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1F7D237F4D35F9E4D69D6C74EEFE6F37 /* Pods-HVTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529BD9663CC2912B150046D0A8FA0E85 /* Pods-HVTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39282F7F4A1E0136B2FFB68C671494D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		4A01CC41A19A512476A8257EE423577A /* HVTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BDA1471F65A5F6E04DC5F16A1B3A53 /* HVTableView-dummy.m */; };
-		6E1981BF896DD767F4E47F224A17278D /* HVTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C5B6547809C401B32307866B6319C1 /* HVTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55629FB20D0FADF6429ED8AD2C1D8ADE /* HVTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C5B6547809C401B32307866B6319C1 /* HVTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5752EA999843108B14F3919CD93E2F41 /* HVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 128C5C248345A85458A595B8C657622E /* HVTableView.m */; };
 		700AECA1E61642D73D023C6EEF643D3D /* Pods-HVTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D74601D0B41821AD9623B36F52D0 /* Pods-HVTableView_Example-dummy.m */; };
-		78A223DC53988200B277C7AA037F41AB /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884AFB828A8AD0DAE36A17C6AD170D4 /* ReplaceMe.m */; };
-		B4F1F881B35A6CC7755267B6258C4370 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		90586565ED1EEADA6616A9CB5BD49D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9DDAA3E816F267D2F943A5AA9A71266C /* HVTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8DE17F3E6767E66C11D491CC98B32 /* HVTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA5C1D18B9972375A701364A746209C2 /* Pods-HVTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A86A31A57105E5F99DAC2C4E54119298 /* Pods-HVTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE8A02F42F8A53D028BE159384BC9A9 /* Pods-HVTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D7D981DF4D9926ABD00D180932DDC6 /* Pods-HVTableView_Tests-dummy.m */; };
-		EE20FCDC2678D7E1385DB1B7E8994A1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FA2DABB3702FEFC8602996BDDB1A798D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC685363AF59EE3C629B0486DD1648FD;
+			remoteGlobalIDString = 6B2263DA4D695BC36D7A0D7354B08012;
 			remoteInfo = HVTableView;
 		};
 /* End PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0E069E8EC4DEAE648DD6042901C59FA3 /* Pods-HVTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		0E12D74601D0B41821AD9623B36F52D0 /* Pods-HVTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HVTableView_Example-dummy.m"; sourceTree = "<group>"; };
 		0E435BAA0326C306FB40D9481E87C7DF /* HVTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HVTableView.modulemap; sourceTree = "<group>"; };
+		128C5C248345A85458A595B8C657622E /* HVTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HVTableView.m; sourceTree = "<group>"; };
 		16E15C08D460FDEA4EDCE02391F2F61B /* Pods-HVTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVTableView_Tests-resources.sh"; sourceTree = "<group>"; };
 		1AC3D19FBE115E2E654B67E25809F3AD /* HVTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HVTableView.framework; path = HVTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAE2137EF85E18C204B4B3CEE2455C7 /* Pods_HVTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HVTableView_Tests.framework; path = "Pods-HVTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +45,9 @@
 		529BD9663CC2912B150046D0A8FA0E85 /* Pods-HVTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HVTableView_Example-umbrella.h"; sourceTree = "<group>"; };
 		5346975E451608AD7482B7C265E1DDB4 /* Pods-HVTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE3C9BDD8319CA7C5D9BCABF3DC7AB9 /* Pods-HVTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FC8DE17F3E6767E66C11D491CC98B32 /* HVTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HVTableView.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		84379F589A1FEC79612D1AE24F07F02D /* Pods-HVTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HVTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8884AFB828A8AD0DAE36A17C6AD170D4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		8CD141978907A70E2AEEF5C586F19FE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92BDA1471F65A5F6E04DC5F16A1B3A53 /* HVTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HVTableView-dummy.m"; sourceTree = "<group>"; };
 		92EA9ADB9366665905870A4EB4B7F135 /* Pods-HVTableView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVTableView_Example-resources.sh"; sourceTree = "<group>"; };
@@ -55,7 +58,6 @@
 		A4B5FC57021D55921E3CB33219E3E669 /* Pods-HVTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A86A31A57105E5F99DAC2C4E54119298 /* Pods-HVTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HVTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BDF27356E03AA2A473DF240E80138943 /* HVTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HVTableView-prefix.pch"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBDFDFEBBD5B9D14F770E367CD134478 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD84E1CBBEA0EA52CFFB9B181A460E7 /* Pods_HVTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HVTableView_Example.framework; path = "Pods-HVTableView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57107136157D99F8E3F5D16F34B3172 /* Pods-HVTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F1F881B35A6CC7755267B6258C4370 /* Foundation.framework in Frameworks */,
+				FA2DABB3702FEFC8602996BDDB1A798D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,36 +79,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39282F7F4A1E0136B2FFB68C671494D5 /* Foundation.framework in Frameworks */,
+				0A86FEDDD7FD7855B388E1D8A577700E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE52DE2D8833E6860BCA34CFAE9E40F8 /* Frameworks */ = {
+		B0AB37E89D4677DB0D1408A97B3A3FE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE20FCDC2678D7E1385DB1B7E8994A1D /* Foundation.framework in Frameworks */,
+				90586565ED1EEADA6616A9CB5BD49D15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EF5190CEDC7925D2FD2A588608D1E94 /* HVTableView */ = {
+		5F67DBEB41554AE367551E0A1F3D247E /* HVTableView */ = {
 			isa = PBXGroup;
 			children = (
-				F54FF3EC9D714F902C2B12B1F8489509 /* Classes */,
+				C27BC7514DC88CE956AA8555016C192D /* Classes */,
 			);
 			name = HVTableView;
 			path = HVTableView;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -154,7 +148,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +171,16 @@
 			path = "Target Support Files/Pods-HVTableView_Tests";
 			sourceTree = "<group>";
 		};
+		C27BC7514DC88CE956AA8555016C192D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8DE17F3E6767E66C11D491CC98B32 /* HVTableView.h */,
+				128C5C248345A85458A595B8C657622E /* HVTableView.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D1F990ACAFDEE531B386F7314E1D1F59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +189,14 @@
 				2AAE2137EF85E18C204B4B3CEE2455C7 /* Pods_HVTableView_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E409B2A568D0EFA85DEA3704BA5DB45C /* Pods-HVTableView_Example */ = {
@@ -208,38 +220,30 @@
 		EA16271767AC4B4107EB1B881BEA6B54 /* HVTableView */ = {
 			isa = PBXGroup;
 			children = (
-				0EF5190CEDC7925D2FD2A588608D1E94 /* HVTableView */,
+				5F67DBEB41554AE367551E0A1F3D247E /* HVTableView */,
 				901A418301683A49DB76A61B60279C9A /* Support Files */,
 			);
 			name = HVTableView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		F54FF3EC9D714F902C2B12B1F8489509 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8884AFB828A8AD0DAE36A17C6AD170D4 /* ReplaceMe.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		132DA0759168AAE84F40BEE266BE14AB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E1981BF896DD767F4E47F224A17278D /* HVTableView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EF04C679576C05B1609C1F16901F966 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F7D237F4D35F9E4D69D6C74EEFE6F37 /* Pods-HVTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842FEF3F68D9C39348C8C4AA21445782 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55629FB20D0FADF6429ED8AD2C1D8ADE /* HVTableView-umbrella.h in Headers */,
+				9DDAA3E816F267D2F943A5AA9A71266C /* HVTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +293,13 @@
 			productReference = CFD84E1CBBEA0EA52CFFB9B181A460E7 /* Pods_HVTableView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DC685363AF59EE3C629B0486DD1648FD /* HVTableView */ = {
+		6B2263DA4D695BC36D7A0D7354B08012 /* HVTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF778EB325378A8ED4EC03C65826E2AD /* Build configuration list for PBXNativeTarget "HVTableView" */;
+			buildConfigurationList = 8929E1515043362BDFFE5B96AC5C8951 /* Build configuration list for PBXNativeTarget "HVTableView" */;
 			buildPhases = (
-				F1AFFC3E0B529248E0E2242D492FABA2 /* Sources */,
-				FE52DE2D8833E6860BCA34CFAE9E40F8 /* Frameworks */,
-				132DA0759168AAE84F40BEE266BE14AB /* Headers */,
+				7F5D5F9EEB7A78046C198BC68A420D3A /* Sources */,
+				B0AB37E89D4677DB0D1408A97B3A3FE0 /* Frameworks */,
+				842FEF3F68D9C39348C8C4AA21445782 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -312,7 +316,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -327,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC685363AF59EE3C629B0486DD1648FD /* HVTableView */,
+				6B2263DA4D695BC36D7A0D7354B08012 /* HVTableView */,
 				0A7511DA0587A63775CCEBB330C8CFC5 /* Pods-HVTableView_Example */,
 				037541B25F46FF01A1114B70092AF2A0 /* Pods-HVTableView_Tests */,
 			);
@@ -335,20 +339,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7F5D5F9EEB7A78046C198BC68A420D3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07506A12549503095C33C2E878671A71 /* HVTableView-dummy.m in Sources */,
+				5752EA999843108B14F3919CD93E2F41 /* HVTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EF5E36D97FE43AF5A383E682521068F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFE8A02F42F8A53D028BE159384BC9A9 /* Pods-HVTableView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1AFFC3E0B529248E0E2242D492FABA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A01CC41A19A512476A8257EE423577A /* HVTableView-dummy.m in Sources */,
-				78A223DC53988200B277C7AA037F41AB /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,21 +370,22 @@
 		1CBB698B8FBDF93581A6FDF4BE7DD3C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HVTableView;
-			target = DC685363AF59EE3C629B0486DD1648FD /* HVTableView */;
+			target = 6B2263DA4D695BC36D7A0D7354B08012 /* HVTableView */;
 			targetProxy = B409A4E5947FD4106AD51C49FF77D5E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18DD0625F789539B35305A830A62934C /* Release */ = {
+		0DEE05D8085507630B8BB26B50DBBCEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1B94051D67A0C236576D7981ACFA2E /* Pods-HVTableView_Tests.release.xcconfig */;
+			baseConfigurationReference = 5346975E451608AD7482B7C265E1DDB4 /* Pods-HVTableView_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -393,7 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HVTableView_Tests/Pods-HVTableView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -405,83 +410,13 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		593AEB4826B248043AE38A460B8EC872 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A339B81DE0DBD47E07CEC28293635FC7 /* HVTableView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HVTableView/HVTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HVTableView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HVTableView/HVTableView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HVTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9976608A41F77728BE193ADD4F80CC84 /* Release */ = {
+		10AC7CFB87FCF92109612BB07C2FEA17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A5BE4842AB0F3D8D0685C2CFB9B3AC7 /* Pods-HVTableView_Example.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -513,11 +448,48 @@
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		2928640FBDE848889A8C279DB11CEAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1B94051D67A0C236576D7981ACFA2E /* Pods-HVTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HVTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HVTableView_Tests/Pods-HVTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HVTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -525,10 +497,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -557,15 +532,16 @@
 			};
 			name = Debug;
 		};
-		A20E8E47D08019EA2AAA532693EBA60C /* Release */ = {
+		4DEF3FAFC78EEDDCD5C7270737291D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A339B81DE0DBD47E07CEC28293635FC7 /* HVTableView.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -578,43 +554,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HVTableView/HVTableView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HVTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9B68454818140E861B58A862C429D3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5346975E451608AD7482B7C265E1DDB4 /* Pods-HVTableView_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HVTableView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HVTableView_Tests/Pods-HVTableView_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HVTableView_Tests;
+				PRODUCT_NAME = HVTableView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,10 +564,11 @@
 			};
 			name = Debug;
 		};
-		F75DE39F4E54ACD7887C27DA6E468338 /* Debug */ = {
+		5C80928D277C32BD040ACCDCC35D36AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4B5FC57021D55921E3CB33219E3E669 /* Pods-HVTableView_Example.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -658,14 +600,90 @@
 			};
 			name = Debug;
 		};
+		6D4B0E3C891A514E7E51337E5816D301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A339B81DE0DBD47E07CEC28293635FC7 /* HVTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HVTableView/HVTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HVTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HVTableView/HVTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HVTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -673,8 +691,17 @@
 		4B25C82329E8D1909ECB38B9C362F069 /* Build configuration list for PBXNativeTarget "Pods-HVTableView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F75DE39F4E54ACD7887C27DA6E468338 /* Debug */,
-				9976608A41F77728BE193ADD4F80CC84 /* Release */,
+				5C80928D277C32BD040ACCDCC35D36AA /* Debug */,
+				10AC7CFB87FCF92109612BB07C2FEA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8929E1515043362BDFFE5B96AC5C8951 /* Build configuration list for PBXNativeTarget "HVTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEF3FAFC78EEDDCD5C7270737291D42 /* Debug */,
+				6D4B0E3C891A514E7E51337E5816D301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -682,17 +709,8 @@
 		B247A9AD39B556EA4C03483464AAC1F5 /* Build configuration list for PBXNativeTarget "Pods-HVTableView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9B68454818140E861B58A862C429D3B /* Debug */,
-				18DD0625F789539B35305A830A62934C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF778EB325378A8ED4EC03C65826E2AD /* Build configuration list for PBXNativeTarget "HVTableView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				593AEB4826B248043AE38A460B8EC872 /* Debug */,
-				A20E8E47D08019EA2AAA532693EBA60C /* Release */,
+				0DEE05D8085507630B8BB26B50DBBCEC /* Debug */,
+				2928640FBDE848889A8C279DB11CEAAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

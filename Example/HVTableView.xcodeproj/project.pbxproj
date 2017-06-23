@@ -10,7 +10,6 @@
 		4096FBDD5A2C10C8B1EE47D2 /* Pods_HVTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE9E3187BA51FD38F3ACAF3 /* Pods_HVTableView_Example.framework */; };
 		526EC9C31DC5CAEE00E627BA /* up-arrow-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 526EC9C01DC5CAEE00E627BA /* up-arrow-4.png */; };
 		52F2E7EE1DC48A0A00F58F06 /* expandGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F2E7ED1DC48A0A00F58F06 /* expandGlyph.png */; };
-		52F2E7F11DC48A8B00F58F06 /* HVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F2E7F01DC48A8B00F58F06 /* HVTableView.m */; };
 		52F2E7FC1DC4A7DE00F58F06 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52F2E7F21DC4A7DE00F58F06 /* 1.jpg */; };
 		52F2E7FD1DC4A7DE00F58F06 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52F2E7F31DC4A7DE00F58F06 /* 2.jpg */; };
 		52F2E7FE1DC4A7DE00F58F06 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52F2E7F41DC4A7DE00F58F06 /* 3.jpg */; };
@@ -53,8 +52,6 @@
 		0FE9E3187BA51FD38F3ACAF3 /* Pods_HVTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HVTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526EC9C01DC5CAEE00E627BA /* up-arrow-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow-4.png"; sourceTree = "<group>"; };
 		52F2E7ED1DC48A0A00F58F06 /* expandGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandGlyph.png; sourceTree = "<group>"; };
-		52F2E7EF1DC48A8B00F58F06 /* HVTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVTableView.h; sourceTree = "<group>"; };
-		52F2E7F01DC48A8B00F58F06 /* HVTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVTableView.m; sourceTree = "<group>"; };
 		52F2E7F21DC4A7DE00F58F06 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		52F2E7F31DC4A7DE00F58F06 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		52F2E7F41DC4A7DE00F58F06 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -162,8 +159,6 @@
 			children = (
 				6003F59C195388D20070C39A /* ExampleAppDelegate.h */,
 				6003F59D195388D20070C39A /* ExampleAppDelegate.m */,
-				52F2E7EF1DC48A8B00F58F06 /* HVTableView.h */,
-				52F2E7F01DC48A8B00F58F06 /* HVTableView.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ExampleViewController.h */,
 				6003F5A6195388D20070C39A /* ExampleViewController.m */,
@@ -294,7 +289,7 @@
 				ORGANIZATIONNAME = ParastooTb;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = V85CZX4H3H;
+						DevelopmentTeam = 5Q93K3SDG9;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -381,7 +376,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4B79E2AA0606817E78959C89 /* [CP] Embed Pods Frameworks */ = {
@@ -411,7 +406,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		75142E2CFBEA9080E3D1BA02 /* [CP] Copy Pods Resources */ = {
@@ -453,7 +448,6 @@
 			files = (
 				52F2E8081DC4BDA400F58F06 /* ExampleTableViewCell.m in Sources */,
 				6003F59E195388D20070C39A /* ExampleAppDelegate.m in Sources */,
-				52F2E7F11DC48A8B00F58F06 /* HVTableView.m in Sources */,
 				6003F5A7195388D20070C39A /* ExampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -576,7 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = V85CZX4H3H;
+				DEVELOPMENT_TEAM = 5Q93K3SDG9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HVTableView/HVTableView-Prefix.pch";
 				INFOPLIST_FILE = "HVTableView/HVTableView-Info.plist";
@@ -593,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = V85CZX4H3H;
+				DEVELOPMENT_TEAM = 5Q93K3SDG9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HVTableView/HVTableView-Prefix.pch";
 				INFOPLIST_FILE = "HVTableView/HVTableView-Info.plist";

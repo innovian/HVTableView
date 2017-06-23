@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## HVTableView
 
-Copyright (c) 2016 ParastooTb <parastoo.tb@aol.com>
+Copyright (c) 2016 Innovian <innovian.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

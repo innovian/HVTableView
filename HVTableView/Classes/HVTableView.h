@@ -4,14 +4,14 @@
 //
 //  Created by Hamidreza Vakilian on 25/11/2013
 //  Copyright (c) 2013 Hamidreza Vakilian. All rights reserved.
-//  Website: http://www.infracyber.com/
-//  Email:   xerxes235@yahoo.com
+//  Website: http://www.innovian.com/
+//  Email:   gitsupport@innovian.com
 //
 
 
 //
-//***************	HVTableView - UITableView with expand/collapse feature   *****************************
-//					by hamidreza vakilian
+//***************	HVTableView - UITableView with expand/collapse feature
+//					by H.Vakilian (Innovian)
 //
 //
 //	This is a subclass of UITableView with expand/collapse feature that may come so handy in many apps.
@@ -145,6 +145,11 @@
 @property (weak,nonatomic) IBOutlet id <HVTableViewDataSource> HVTableViewDataSource;
 @property (nonatomic) IBInspectable BOOL expandOnlyOneCell;
 @property (nonatomic) IBInspectable BOOL enableAutoScroll;
+
+-(void)toggleCellAtIndexPath:(NSIndexPath*)indexPath;
+-(void)expandCellAtIndexPath:(NSIndexPath*)indexPath;
+-(void)collapseCellAtIndexPath:(NSIndexPath*)indexPath;
+
 
 @end
 

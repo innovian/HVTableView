@@ -11,6 +11,6 @@
 
 
 @interface ExampleViewController : UIViewController
-@property (weak, nonatomic) IBOutlet HVTableView *table;
+@property (weak, nonatomic) IBOutlet HVTableView *tableView;
 
 @end
