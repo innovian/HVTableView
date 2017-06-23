@@ -8,9 +8,8 @@
 
 ###### UITableView with expand/collapse feature
 
-### Developers
+### Developer
 - Hamidreza Vakilian
-- Parastoo Tabatabaei
 
 ### Contributors
 - Gavy Aggarwal (Storyboard Support)
