@@ -12,7 +12,9 @@
 - Hamidreza Vakilian
 
 ### Contributors
-- Gavy Aggarwal (Storyboard Support)
+- Gavy Aggarwal -- Storyboard Support
+- Creatd Software (@creatd) --Added collapseExpandedCells method
+
 
 ------
 
