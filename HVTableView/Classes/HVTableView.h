@@ -181,7 +181,7 @@
 /**
  Collapse all expanded cells (if any)
  
- NOTE- This needs to be called before changing data source (see here https://github.com/xerxes235/HVTableView/issues/4#issuecomment-54508764)
+ NOTE- This needs to be called before changing data source (see here https://github.com/innovian/HVTableView/issues/4#issuecomment-54508764)
  */
 -(void)collapseExpandedCells;
 
