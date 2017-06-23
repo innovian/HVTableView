@@ -135,7 +135,6 @@
 
 @interface HVTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 {
-	
 	NSIndexPath *selectedIndexPath;
 	int actionToTake;
 	NSMutableArray* expandedIndexPaths;
@@ -143,13 +142,48 @@
 
 @property (weak,nonatomic) IBOutlet id <HVTableViewDelegate> HVTableViewDelegate;
 @property (weak,nonatomic) IBOutlet id <HVTableViewDataSource> HVTableViewDataSource;
+
+
+/**
+ Causes the HVTableView to only allow one cell being expanded at the same time.
+ */
 @property (nonatomic) IBInspectable BOOL expandOnlyOneCell;
+
+/**
+ Causes the HVTableView to automatically scroll to the cell which is being expanded.
+ */
 @property (nonatomic) IBInspectable BOOL enableAutoScroll;
 
+
+/**
+ Toggles expand or collapse state for the cell at specified indexPath.
+
+ @param indexPath indexPath to toggle.
+ */
 -(void)toggleCellAtIndexPath:(NSIndexPath*)indexPath;
+
+
+/**
+ Expands the cell at specified indexPath if it's already collapsed.
+ 
+ @param indexPath indexPath to epxand.
+ */
 -(void)expandCellAtIndexPath:(NSIndexPath*)indexPath;
+
+/**
+ Collapses the cell at specified indexPath if it's already collapsed.
+ 
+ @param indexPath indexPath to collapse.
+ */
 -(void)collapseCellAtIndexPath:(NSIndexPath*)indexPath;
 
+
+/**
+ Collapse all expanded cells (if any)
+ 
+ NOTE- This needs to be called before changing data source (see here https://github.com/xerxes235/HVTableView/issues/4#issuecomment-54508764)
+ */
+-(void)collapseExpandedCells;
 
 @end
 
