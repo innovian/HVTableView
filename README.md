@@ -1,4 +1,5 @@
 # HVTableView
+###### UITableView with expand/collapse feature
 
 [![Version](https://img.shields.io/cocoapods/v/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 [![License](https://img.shields.io/cocoapods/l/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
@@ -6,13 +7,13 @@
 
 [![HVTableView Example](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)](https://raw.githubusercontent.com/innovian/HVTableView/master/Screens/animation.gif)
 
-###### UITableView with expand/collapse feature
+
 
 ### Developer
 - Hamidreza Vakilian
 
 ### Contributors
-- Gavy Aggarwal -- Storyboard Support
+- Gavy Aggarwal (@gavyaggarwal) -- Storyboard Support
 - Creatd Software (@creatd) --Added collapseExpandedCells method
 
 
