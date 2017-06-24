@@ -1,5 +1,5 @@
 # HVTableView
-###### UITableView with expand/collapse feature
+#### UITableView with expand/collapse feature
 
 [![Version](https://img.shields.io/cocoapods/v/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
 [![License](https://img.shields.io/cocoapods/l/HVTableView.svg?style=flat)](http://cocoapods.org/pods/HVTableView)
